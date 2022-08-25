@@ -144,19 +144,6 @@ function PopVis(_ref) {
   }, infoLink && buttonText), /*#__PURE__*/_react.default.createElement("div", {
     className: "btn-row"
   }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "btn-muted",
-    onClick: e => {
-      e.preventDefault();
-      setMuted(!muted);
-    },
-    style: {
-      display: showButtons ? 'block' : 'none',
-      fontSize: showVideo ? '22px' : '14px',
-      margin: showVideo ? '0.3rem' : '0'
-    }
-  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: muted ? _freeSolidSvgIcons.faVolumeLow : _freeSolidSvgIcons.faVolumeMute
-  })), /*#__PURE__*/_react.default.createElement("button", {
     className: "btn-size",
     onClick: e => {
       e.preventDefault();
@@ -170,6 +157,19 @@ function PopVis(_ref) {
     }
   }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
     icon: showVideo ? _freeSolidSvgIcons.faDownLeftAndUpRightToCenter : _freeSolidSvgIcons.faUpRightAndDownLeftFromCenter
+  })), /*#__PURE__*/_react.default.createElement("button", {
+    className: "btn-muted",
+    onClick: e => {
+      e.preventDefault();
+      setMuted(!muted);
+    },
+    style: {
+      display: showButtons ? 'block' : 'none',
+      fontSize: showVideo ? '22px' : '14px',
+      margin: showVideo ? '0.3rem' : '0'
+    }
+  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+    icon: muted ? _freeSolidSvgIcons.faVolumeLow : _freeSolidSvgIcons.faVolumeMute
   }))));
 }
 
