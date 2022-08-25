@@ -127,19 +127,6 @@ function PopVis({
         {infoLink && buttonText}
       </a>
       <div className="btn-row">
-        <button className='btn-muted' 
-          onClick={(e) => {
-            e.preventDefault();
-            setMuted(!muted);
-          }} 
-          style={{ 
-            display: showButtons ? 'block' : 'none',
-            fontSize: showVideo ? '22px' : '14px',
-            margin: showVideo ? '0.3rem' : '0' 
-          }}
-        >
-          <FontAwesomeIcon icon={ muted ? faVolumeLow : faVolumeMute } />
-        </button>
         <button className='btn-size' 
           onClick={(e) => {
             e.preventDefault();
@@ -153,6 +140,19 @@ function PopVis({
           }}
         >
           <FontAwesomeIcon icon={ showVideo ? faDownLeftAndUpRightToCenter : faUpRightAndDownLeftFromCenter } />
+        </button>
+        <button className='btn-muted' 
+          onClick={(e) => {
+            e.preventDefault();
+            setMuted(!muted);
+          }} 
+          style={{ 
+            display: showButtons ? 'block' : 'none',
+            fontSize: showVideo ? '22px' : '14px',
+            margin: showVideo ? '0.3rem' : '0' 
+          }}
+        >
+          <FontAwesomeIcon icon={ muted ? faVolumeLow : faVolumeMute } />
         </button>
       </div>
     </div>

@@ -6,7 +6,6 @@
   transition: 0.2s;
   animation: slide-in 0.3s ease-in-out 0.3s;
   border: none;
-  z-index: 999999;
 }
 
 .main {
@@ -27,7 +26,7 @@
 .btn-row {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -56,7 +55,7 @@
 .btn-close {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 100;
   display: flex;
   justify-content: center;
